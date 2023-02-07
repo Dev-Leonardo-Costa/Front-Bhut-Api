@@ -1,0 +1,8 @@
+.footer{
+    background-color: #635D5B;
+    position: fixed;
+    bottom: 0;
+    color: white;
+    font-size: 12px;
+    justify-content: flex-end;
+}
