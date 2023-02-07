@@ -1,0 +1,15 @@
+.header {
+    background-color: #635D5B;
+    height: 10%;
+}
+
+
+img {
+    height: 3rem;
+    margin-left: 50px;
+}
+
+span {
+    display: flex;
+    align-items: center;
+}
