@@ -1,12 +1,13 @@
 .header {
-    background-color: #635D5B;
-    height: 10%;
+    background-color: #201F20;
+    height: 8%;
+    justify-content: center;
 }
 
 
 img {
     height: 3rem;
-    margin-left: 50px;
+
 }
 
 span {

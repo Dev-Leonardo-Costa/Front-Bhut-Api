@@ -1,0 +1,16 @@
+.container {
+    height: 87%;
+    background-color: #2F2E30;
+}
+
+i {
+    padding-right: .6rem;
+}
+
+.mat-drawer {
+    background-color: #434243;
+}
+
+.mat-list{
+    color: white;
+}
