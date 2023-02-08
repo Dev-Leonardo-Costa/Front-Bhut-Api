@@ -1,6 +1,10 @@
 <mat-sidenav-container class="container">
     <mat-sidenav class="mat-drawer" mode="side" opened>
         <mat-nav-list>
+            <a routerLink="" routerLinkActive="router-link-active"  mat-list-item class="mat-list">
+                <i class="material-icons">home</i>
+                Home
+            </a>
             <a mat-list-item class="mat-list">
                 <i class="material-icons">loupe</i>
                 Add Car
@@ -13,7 +17,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content>
-             leo
+             <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
 
