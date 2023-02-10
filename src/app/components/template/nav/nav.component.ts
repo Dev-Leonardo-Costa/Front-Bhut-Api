@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { CarService } from './../../views/car/car.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -11,5 +13,5 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
 }

@@ -1,23 +1,40 @@
 <mat-sidenav-container class="container">
-    <mat-sidenav class="mat-drawer" mode="side" opened>
-        <mat-nav-list>
-            <a routerLink="" routerLinkActive="router-link-active"  mat-list-item class="mat-list">
-                <i class="material-icons">home</i>
-                Home
-            </a>
-            <a mat-list-item class="mat-list">
-                <i class="material-icons">loupe</i>
-                Add Car
-            </a>
-            <a mat-list-item class="mat-list">
-                <i class="material-icons">webhook</i>
-                Add WebHook 
-            </a>
-        </mat-nav-list>
-    </mat-sidenav>
+  <mat-sidenav class="mat-drawer" mode="side" opened>
+    <mat-nav-list>
+      <a routerLink="" routerLinkActive="router-link-active" mat-list-item class="mat-list">
+        <i class="material-icons">home</i>
+        Home
+      </a>
 
-    <mat-sidenav-content>
-             <router-outlet></router-outlet>
-    </mat-sidenav-content>
+      <a mat-button [matMenuTriggerFor]="car" mat-list-item class="mat-list">
+        <i class="material-icons">directions_car</i>
+        Car
+      </a>
+      <mat-menu #car="matMenu">
+        <button routerLink="/cars" mat-menu-item>search all cars</button>
+        <button routerLink="/cars/create" mat-menu-item>register car</button>
+      </mat-menu>
+
+      <a mat-button [matMenuTriggerFor]="webhook" mat-list-item class="mat-list">
+        <i class="material-icons">webhook</i>
+        WebHook
+      </a>
+      <mat-menu #webhook="matMenu">
+        <button mat-menu-item>register webhook</button>
+      </mat-menu>
+
+      <a mat-button [matMenuTriggerFor]="log" mat-list-item class="mat-list">
+        <i class="material-icons">file_download_done</i>
+        Log
+      </a>
+      <mat-menu #log="matMenu">
+        <button routerLink="/logs" mat-menu-item>search all logs</button>
+      </mat-menu>
+
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
 </mat-sidenav-container>
-

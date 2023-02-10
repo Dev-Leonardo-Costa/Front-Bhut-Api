@@ -1,0 +1,41 @@
+<div class="content">
+  <div class="title">
+    <i class="material-icons">directions_car</i>
+  </div>
+  <div class="mat-elevation-z8 content-table">
+    <table class="table" mat-table [dataSource]="cars">
+      <ng-container matColumnDef="_id">
+        <th class="atributo" mat-header-cell *matHeaderCellDef>ID</th>
+        <td class="atributo" mat-cell *matCellDef="let row">{{ row._id }}</td>
+      </ng-container>
+  
+      <ng-container class="atributo" matColumnDef="title">
+        <th class="atributo" mat-header-cell *matHeaderCellDef>TITLE</th>
+        <td class="atributo" mat-cell *matCellDef="let row">{{ row.title }}</td>
+      </ng-container>
+  
+      <ng-container class="atributo" matColumnDef="brand">
+        <th class="atributo" mat-header-cell *matHeaderCellDef>BRAND</th>
+        <td class="atributo" mat-cell *matCellDef="let row">{{ row.brand }}</td>
+      </ng-container>
+  
+      <ng-container class="atributo" matColumnDef="price">
+        <th class="atributo" mat-header-cell *matHeaderCellDef>PRICE</th>
+        <td class="atributo" mat-cell *matCellDef="let row">{{ row.price }}</td>
+      </ng-container>
+  
+      <ng-container class="atributo" matColumnDef="age">
+        <th class="atributo" mat-header-cell *matHeaderCellDef>AGE</th>
+        <td class="atributo" mat-cell *matCellDef="let row">{{ row.age }}</td>
+      </ng-container>
+  
+      <ng-container matColumnDef="__v">
+        <th class="atributo" mat-header-cell *matHeaderCellDef>V</th>
+        <td class="atributo" mat-cell *matCellDef="let row">{{ row.__v }}</td>
+      </ng-container>
+  
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.content {
+    width: 90%;
+    margin: 1.4rem auto;
+    background-color: #434243;
+    border: 2px solid #96EEF8;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.material-icons {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #ffffff;
+    border: 2px solid #96EEF8;
+    border-radius: 20px;
+}
+
+.table {
+    background-color: #434243;
+    width: 100%;
+}
+
+.atributo {
+    color: #ffffff;
+}

@@ -1,0 +1,29 @@
+<form>
+  <div class="title">
+    <i class="material-icons">no_crash</i>
+  </div>
+  <mat-form-field class="form">
+    <mat-label class="label">Title</mat-label>
+    <input class="label" [(ngModel)]="car.title" matInput type="text" name="title" placeholder="title car" />
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label class="label">Brand</mat-label>
+    <input class="label" [(ngModel)]="car.brand"  matInput type="text" name="brand" placeholder="brand car" />
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label class="label">Price</mat-label>
+    <input class="label" [(ngModel)]="car.price" matInput type="text" name="price" placeholder="R$ 0">
+  </mat-form-field>
+
+  <mat-form-field class="form">
+    <mat-label class="label">Age</mat-label>
+    <input class="label" [(ngModel)]="car.age" matInput type="number" name="age" placeholder="10 ages" />
+  </mat-form-field>
+
+  <div class="buttons">
+      <button (click)="create()">REGISTER</button>
+      <button>CANCEL</button>
+  </div>
+</form>

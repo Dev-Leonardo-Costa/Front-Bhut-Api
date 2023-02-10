@@ -1,0 +1,26 @@
+<div class="content">
+    <div class="title">
+      <i class="material-icons">file_download_done</i>
+    </div>
+    <div class="mat-elevation-z8 content-table">
+      <table class="atributo" class="table" mat-table [dataSource]="logs" >
+        <ng-container matColumnDef="id">
+          <th class="atributo" mat-header-cell *matHeaderCellDef>ID</th>
+          <td class="atributo" mat-cell *matCellDef="let row">{{ row.id }}</td>
+        </ng-container>
+    
+        <ng-container class="atributo" matColumnDef="dateTimeEvent">
+          <th class="atributo" mat-header-cell *matHeaderCellDef>DATA TIME EVENT</th>
+          <td class="atributo" mat-cell *matCellDef="let row">{{ row.dateTimeEvent }}</td>
+        </ng-container>
+    
+        <ng-container class="atributo" matColumnDef="idCar">
+          <th class="atributo" mat-header-cell *matHeaderCellDef>ID CAR</th>
+          <td class="atributo" mat-cell *matCellDef="let row">{{ row.idCar }}</td>
+        </ng-container>
+    
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+  </div>
